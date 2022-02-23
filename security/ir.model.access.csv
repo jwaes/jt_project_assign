@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_jt_project_assign_jt_project_assign,jt_project_assign.jt_project_assign,model_jt_project_assign_jt_project_assign,base.group_user,1,1,1,1
