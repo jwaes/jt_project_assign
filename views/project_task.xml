@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="quick_create_task_form" model="ir.ui.view">
+        <field name="name">project.task.form.quick_create</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.quick_create_task_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//group" position="inside">
+                <field name="project_id" invisible="1"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
