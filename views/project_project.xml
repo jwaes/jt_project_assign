@@ -9,10 +9,10 @@
             <xpath expr="//page[1]" position="before">
                 <page name="project_stages" string="Stages">
                     <field name="type_ids">
-                        <tree editable="bottom" delete="false" create="false">
+                        <list editable="bottom" delete="false" create="false">
                             <field name="name" edit="false" create="false"/>
                             <field name="auto_assign_user_id" widget="many2onebutton" edit="true"/>
-                        </tree>
+                        </list>
                     </field>                    
                 </page>
             </xpath>
