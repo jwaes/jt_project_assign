@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-<!-- 
+
     <record id="task_type_tree_inherited" model="ir.ui.view">
         <field name="name">project.task.type.view.list.inherit.project.autoassign</field>
         <field name="model">project.task.type</field>
@@ -10,6 +10,6 @@
                 <field name="auto_assign_user_id" widget="many2onebutton" edit="true" />
             </field>
         </field>
-    </record>     -->
+    </record>    
 
 </odoo>
