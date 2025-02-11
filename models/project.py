@@ -16,15 +16,12 @@ class Task(models.Model):
     def _onchange_stage_id(self):
     # if self.stage_id and self.stage_id.name == 'Estimation':
     #     # do your code
-        _logger.debug("stage changed to %s ", self.stage_id.name)
-        _logger.debug("assigned users are %s", self.user_ids)
+        _logger.info("stage changed to %s ", self.stage_id.name)
+        _logger.info("assigned users are %s", self.user_ids)
         if self.stage_id.auto_assign_user_id:
-            _logger.debug("found a assigned user for this stage: %s, self.stage_id.auto_assign_user_id.name")
+            _logger.info("found an assigned user for this stage: %s, self.stage_id.auto_assign_user_id.name")
             self.user_ids = self.stage_id.auto_assign_user_id
-            _logger.debug("assigned users are %s", self.user_ids)
-
-class Task(models.Model):
-    _inherit = 'project.task'
+            _logger.info("assigned users are %s", self.user_ids)
 
     @api.model
     def default_get(self, default_fields):

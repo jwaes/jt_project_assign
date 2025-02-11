@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <record id="edit_project" model="ir.ui.view">
+    <!-- <record id="edit_project" model="ir.ui.view">
         <field name="name">project.project.form</field>
         <field name="model">project.project</field>
         <field name="inherit_id" ref="project.edit_project" />
@@ -17,5 +17,17 @@
                 </page>
             </xpath>
         </field>
+    </record> -->
+
+    <record id="task_type_tree_inherit_project" model="ir.ui.view">
+        <field name="name">project.task.type.view.list.inherit</field>
+        <field name="model">project.task.type</field>
+        <field name="inherit_id" ref="project.task_type_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="auto_assign_user_id" widget="many2onebutton" edit="true"/>
+            </xpath>
+        </field>
     </record>
-</odoo>
+    
+ </odoo>
