@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-
     <record id="task_type_tree_inherited" model="ir.ui.view">
-        <field name="name">project.task.type.list.inherited</field>
+        <field name="name">project.task.type.view.list.inherit.project.autoassign</field>
         <field name="model">project.task.type</field>
-        <field name="mode">primary</field>
-        <field name="inherit_id" ref="task_type_tree" />
+        <field name="inherit_id" ref="project.task_type_tree_inherited"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='name']" position="after">
+            <field name="name" position="after">
                 <field name="auto_assign_user_id" widget="many2onebutton" edit="true" />
-            </xpath>
+            </field>
         </field>
-    </record>
+    </record>    
 
 </odoo>
