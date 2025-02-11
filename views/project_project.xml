@@ -4,6 +4,7 @@
     <record id="task_type_tree_inherited" model="ir.ui.view">
         <field name="name">project.task.type.view.list.inherit.project.autoassign</field>
         <field name="model">project.task.type</field>
+        <field name="mode">primary</field>
         <field name="inherit_id" ref="project.task_type_tree_inherited"/>
         <field name="arch" type="xml">
             <field name="name" position="after">
